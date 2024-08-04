@@ -1,3 +1,6 @@
 service : {
-    "greet": (text) -> (text) query;
+  verify_flight_is_alive : (contract_address : text) -> (bool);
+  broadcast_flight_coords : (contract_address : text, lat : text, long : text) -> ();
+  get_flight_coords : (contract_address : text) -> (text);
+  owe_flight : (contract_address : text, max_owe_amount_to_next_user : int64) -> (bool);
 }

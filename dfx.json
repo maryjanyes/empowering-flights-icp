@@ -4,16 +4,6 @@
       "candid": "src/empowering_flights_dapp_backend/empowering_flights_dapp_backend.did",
       "package": "empowering_flights_dapp_backend",
       "type": "rust"
-    },
-    "empowering_flights_dapp_frontend": {
-      "dependencies": [
-        "empowering_flights_dapp_backend"
-      ],
-      "source": [
-        "src/empowering_flights_dapp_frontend/dist"
-      ],
-      "type": "assets",
-      "workspace": "empowering_flights_dapp_frontend"
     }
   },
   "defaults": {

@@ -1,14 +1,22 @@
 [package]
 name = "empowering_flights_dapp_backend"
-version = "0.1.0"
+version = "0.0.1"
+description = "Canister that provides verification of flighs data from ICP to EVM"
+authors = ["Marianna Yasko"]
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [lib]
 crate-type = ["cdylib"]
 
 [dependencies]
-candid = "0.10"
-ic-cdk = "0.13"
-ic-cdk-timers = "0.7" # Feel free to remove this dependency if you don't need timers
+candid = "0.9"
+ic-cdk = "0.10"
+ic-cdk-macros = "0.7"
+serde = { version = "1", features = ["derive"] }
+once_cell = "1.9"
+parking_lot = "0.12"
+url = "2.3"
+serde_json = "1"
+hex = "0.4"
+ethers-core = "2.0"
+getrandom = { version = "0.2", features = ["custom"] }
